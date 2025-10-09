@@ -1,21 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Batuhan Şahin | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batuhan Şahin | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b3954;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      border-bottom: 3px solid #0b3954;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      color: #0b3954;
+    }
+
+    .project {
+      background: white;
+      padding: 1.25rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.25rem;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #102a43;
+    }
+
+    .project a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #0b3954;
+      color: white;
+    }
+
+    footer a {
+      color: #fdd835;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, I'm Batuhan 👋</h1>
+
+  <header>
+    <h1>Batuhan Şahin 👋</h1>
     <p>.NET Developer | Data Enthusiast | Game Developer</p>
+  </header>
 
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/Sahinbatuhan/UserApiOperations">Project 1</a></li>
-        <li><a href="https://github.com/Sahinbatuhan/Blog-Project">Project 2</a></li>
-    </ul>
+  <main>
 
-    <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/batuhan-şahin-9742b2288/">My LinkedIn</a></p>
+    <section id="research">
+      <h2>Computational & Engineering Research Experience</h2>
+
+      <div class="project">
+        <h3>Conversion of DMA Data to Viscoelastic Master Curve and Prony Series Fitting</h3>
+        <p><strong>MSc Thesis – Boğaziçi University</strong></p>
+        <p>Developed a numerical method in MATLAB to construct master curves from Dynamic Mechanical Analysis (DMA) data using WLF-based time–temperature superposition. Fitted Prony series via least squares to model viscoelastic material behavior, validated by finite element simulations of brain tissue under compression. This work connects constitutive modeling and continuum mechanics central to digital twin systems.</p>
+      </div>
+
+      <div class="project">
+        <h3>Modeling a Start-up Business with Saltwater Batteries and PV Panels for Power Continuity</h3>
+        <p><strong>Independent Study – Istanbul Technical University</strong></p>
+        <p>Designed a techno-economic model for a PV-sourced energy system with saltwater batteries. Collected real data from Turkish and Austrian manufacturers, analyzed ROI and feasibility using hospital energy data. Demonstrates applied systems modeling, real-world data analysis, and multidisciplinary integration.</p>
+      </div>
+    </section>
+
+    <section id="dotnet">
+      <h2>.NET Projects</h2>
+
+      <div class="project">
+        <h3><a href="https://github.com/Sahinbatuhan/Blog-Project" target="_blank">Pratic Blog (Feb 2025 - Mar 2025)</a></h3>
+        <p><strong>Technologies:</strong> ASP.NET Core MVC, C#, EF Core, SQL Server, LINQ, Identity, Bootstrap, JavaScript, Azure DevOps</p>
+        <ul>
+          <li>Developed scalable backend with ASP.NET Core MVC (Code-First Approach).</li>
+          <li>Implemented role-based authentication using Identity.</li>
+          <li>Optimized data queries with LINQ and SQL Server.</li>
+          <li>Built responsive UI with Bootstrap and JavaScript.</li>
+          <li>Applied Agile & Scrum practices; used Azure DevOps for CI/CD.</li>
+          <li>Followed Repository & Unit of Work patterns for maintainable design.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/Sahinbatuhan/UserApiOperations" target="_blank">User Management API (Sep 2025)</a></h3>
+        <p><strong>Technologies:</strong> ASP.NET Core Web API, C#, EF Core, PostgreSQL, MediatR (CQRS), FluentValidation, Swagger</p>
+        <ul>
+          <li>Built modular Web API with CQRS architecture using MediatR.</li>
+          <li>Integrated EF Core and PostgreSQL for scalable data operations.</li>
+          <li>Added robust input validation via FluentValidation.</li>
+          <li>Used Swagger UI for API documentation and collaboration.</li>
+          <li>Applied Clean Architecture principles for long-term maintainability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="data">
+      <h2>Data Projects</h2>
+
+      <div class="project">
+        <h3><a href="https://www.kaggle.com/code/batuhanahn/world-happiness" target="_blank">World Happiness Data Analysis (Jul 2025)</a></h3>
+        <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook, GitHub, Kaggle</p>
+        <ul>
+          <li>Performed end-to-end analysis of global happiness data (2015–2019).</li>
+          <li>Used pandas for preprocessing, merging, and feature engineering.</li>
+          <li>Created visualizations with Matplotlib and Seaborn for trend analysis.</li>
+          <li>Identified top and bottom shifting countries with correlation insights.</li>
+          <li>Delivered clean, reproducible, and visually engaging notebooks.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>📫 <strong>Contact:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/batuhan-şahin-9742b2288/" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/Sahinbatuhan" target="_blank">GitHub</a></p>
+  </footer>
+
 </body>
 </html>
